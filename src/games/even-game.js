@@ -1,4 +1,4 @@
-import gameStart from './index.js';
+import gameStart from '../index.js';
 
 export default () => {
   const getRules = () => {
