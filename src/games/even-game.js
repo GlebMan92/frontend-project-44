@@ -1,4 +1,4 @@
-import gameStart from '../index.js';
+import { startGame, getRandomInt } from '../index.js';
 
 export default () => {
   const getRules = () => {
@@ -6,7 +6,7 @@ export default () => {
   };
 
   const getQuest = () => {
-    const randomNumber = Math.floor(Math.random() * 100);
+    const randomNumber = getRandomInt(100);
     return randomNumber;
   };
   const getTrueAnswer = (num) => {
@@ -14,5 +14,5 @@ export default () => {
     return trueAnswer;
   };
 
-  gameStart(getRules, getQuest, getTrueAnswer);
+  startGame(getRules, getQuest, getTrueAnswer);
 };

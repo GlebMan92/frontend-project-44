@@ -1,11 +1,6 @@
-import startGame from '../index.js';
+import { startGame, getRandomInt } from '../index.js';
 
 export default () => {
-  const getRandomInt = (num) => {
-    const randomInt = Math.floor(Math.random() * num);
-    return randomInt;
-  };
-
   const getRandomSymbol = () => {
     const randomNum = getRandomInt(3);
     const symbols = ['+', '-', '*'];

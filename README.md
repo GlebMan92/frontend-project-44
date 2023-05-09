@@ -9,3 +9,5 @@
 [![asciicast](https://asciinema.org/a/kLFm9fHDG8l3g0pBKctQhr88X.svg)](https://asciinema.org/a/kLFm9fHDG8l3g0pBKctQhr88X)
 * #### brain-calc
 [![asciicast](https://asciinema.org/a/YAQqxEuwGlV4tEG6YcNSDBRmb.svg)](https://asciinema.org/a/YAQqxEuwGlV4tEG6YcNSDBRmb)
+* #### brain-gcd
+[![asciicast](https://asciinema.org/a/uxEEchZbrG1GNjpILRb4dg41Z.svg)](https://asciinema.org/a/uxEEchZbrG1GNjpILRb4dg41Z)

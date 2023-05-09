@@ -1,6 +1,6 @@
 import readLineSync from 'readline-sync';
 
-export default (getRules, getQuest, getTrueAnswer) => {
+const startGame = (getRules, getQuest, getTrueAnswer) => {
   console.log('Welcome to the Brain Games!');
   const userName = readLineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -23,3 +23,10 @@ export default (getRules, getQuest, getTrueAnswer) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
+
+const getRandomInt = (num) => {
+  const randomInt = Math.floor(Math.random() * num);
+  return randomInt;
+};
+
+export { startGame, getRandomInt };
