@@ -14,3 +14,5 @@
 [![asciicast](https://asciinema.org/a/uxEEchZbrG1GNjpILRb4dg41Z.svg)](https://asciinema.org/a/uxEEchZbrG1GNjpILRb4dg41Z)
 * ### brain-progression
 [![asciicast](https://asciinema.org/a/hcLAaAyIcL8INR2PyXbk2j3I7.svg)](https://asciinema.org/a/hcLAaAyIcL8INR2PyXbk2j3I7)
+* ### brain-prime
+[![asciicast](https://asciinema.org/a/NfJ7NbD9BrwCfdhOshmvknX8W.svg)](https://asciinema.org/a/NfJ7NbD9BrwCfdhOshmvknX8W)

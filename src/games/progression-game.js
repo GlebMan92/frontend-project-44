@@ -1,6 +1,8 @@
 import { startGame, getRandomInt } from '../index.js';
 
 export default () => {
+  const gameRules = 'What number is missing in the progression?';
+
   const getArrey = () => {
     const arrey = [];
     const arrLength = getRandomInt(10, 5);
@@ -11,10 +13,6 @@ export default () => {
       firstItem += increment;
     }
     return arrey;
-  };
-
-  const getRules = () => {
-    console.log('What number is missing in the progression?');
   };
 
   const getQuest = () => {
@@ -40,5 +38,5 @@ export default () => {
     return trueAnswer.toString();
   };
 
-  startGame(getRules, getQuest, getTrueAnswer);
+  startGame(gameRules, getQuest, getTrueAnswer);
 };

@@ -1,16 +1,13 @@
 import { startGame, getRandomInt } from '../index.js';
 
 export default () => {
+  const gameRules = 'What is the result of the expression?';
+
   const getRandomSymbol = () => {
     const randomNum = getRandomInt(3);
     const symbols = ['+', '-', '*'];
     const result = symbols[randomNum];
     return result;
-  };
-
-  const getRules = () => {
-    const gameRules = 'What is the result of the expression?';
-    return gameRules;
   };
 
   const getQuest = () => {
@@ -42,5 +39,5 @@ export default () => {
     return trueAnswer;
   };
 
-  startGame(getRules, getQuest, getTrueAnswer);
+  startGame(gameRules, getQuest, getTrueAnswer);
 };
