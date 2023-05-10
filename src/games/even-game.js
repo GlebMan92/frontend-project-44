@@ -9,6 +9,7 @@ export default () => {
     const randomNumber = getRandomInt(100);
     return randomNumber;
   };
+
   const getTrueAnswer = (num) => {
     const trueAnswer = num % 2 === 0 ? 'yes' : 'no';
     return trueAnswer;

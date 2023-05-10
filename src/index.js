@@ -24,8 +24,11 @@ const startGame = (getRules, getQuest, getTrueAnswer) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-const getRandomInt = (num) => {
-  const randomInt = Math.floor(Math.random() * num);
+const getRandomInt = (max, min = 0) => {
+  let randomInt = Math.floor(Math.random() * max);
+  while (randomInt < min) {
+    randomInt += 1;
+  }
   return randomInt;
 };
 

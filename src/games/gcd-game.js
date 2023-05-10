@@ -16,6 +16,7 @@ export default () => {
     gcd = String(int1);
     return gcd;
   };
+
   const getRules = () => {
     console.log('Find the greatest common divisor of given numbers.');
   };
@@ -26,6 +27,7 @@ export default () => {
     const question = `${number1} ${number2}`;
     return question;
   };
+
   const getTrueAnswer = (value) => {
     const [num1, num2] = value.split(' ');
     const trueAnswer = getGcd(num1, num2);

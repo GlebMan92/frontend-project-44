@@ -39,7 +39,6 @@ export default () => {
       default:
         break;
     }
-
     return trueAnswer;
   };
 
