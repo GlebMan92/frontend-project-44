@@ -4,19 +4,9 @@ export default () => {
   const gameRules = 'Find the greatest common divisor of given numbers.';
 
   const getGcd = (value1, value2) => {
-    let gcd = '0';
-    let int1 = value1;
-    let int2 = value2;
-    if (int1 * int2 === 0) return gcd;
-    while (int1 !== int2) {
-      if (int1 > int2) {
-        int1 -= int2;
-      } else {
-        int2 -= int1;
-      }
-    }
-    gcd = String(int1);
-    return gcd;
+    if (value2 > value1) return getGcd(value2, value1);
+    if (!value2) return value1;
+    return getGcd(value2, value1 % value2);
   };
 
   const getQuest = () => {
@@ -29,7 +19,7 @@ export default () => {
   const getTrueAnswer = (value) => {
     const [num1, num2] = value.split(' ');
     const trueAnswer = getGcd(num1, num2);
-    return trueAnswer;
+    return trueAnswer.toString();
   };
 
   startGame(gameRules, getQuest, getTrueAnswer);
