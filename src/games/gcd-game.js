@@ -18,7 +18,8 @@ export default () => {
 
   const getTrueAnswer = (value) => {
     const [num1, num2] = value.split(' ');
-    const trueAnswer = getGcd(num1, num2);
+    let trueAnswer;
+    trueAnswer = num1 * num2 === 0 ? 0 : trueAnswer = getGcd(num1, num2);
     return trueAnswer.toString();
   };
 
