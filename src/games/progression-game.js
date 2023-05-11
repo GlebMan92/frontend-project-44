@@ -22,8 +22,8 @@ export default () => {
     return progression.join(' ');
   };
 
-  const getTrueAnswer = (getQuest) => {
-    const questInArr = getQuest.split(' ');
+  const getTrueAnswer = (questProgression) => {
+    const questInArr = questProgression.split(' ');
     const hiddenIndex = questInArr.indexOf('..');
     const lastIndex = questInArr.length - 1;
     let trueAnswer;

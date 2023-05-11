@@ -18,12 +18,13 @@ export default () => {
     return quest;
   };
 
-  const getTrueAnswer = (getQuest) => {
-    const int1 = parseInt(getQuest, 10);
-    const int2 = parseInt(getQuest.slice(getQuest.length / 2 + 1), 10);
+  const getTrueAnswer = (expr) => {
+    const expression = expr;
+    const int1 = parseInt(expression, 10);
+    const int2 = parseInt(expression.slice(expression.length / 2 + 1), 10);
     let trueAnswer = 0;
-    const questInArr = getQuest.split(' ');
-    switch (questInArr[1]) {
+    const expInArr = expression.split(' ');
+    switch (expInArr[1]) {
       case '+':
         trueAnswer = String(int1 + int2);
         break;
